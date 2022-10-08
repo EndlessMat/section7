@@ -8,7 +8,7 @@ class MyYear extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.symmetric(vertical: 0.5),
+        padding: const EdgeInsets.symmetric(vertical: 0.6),
         color: Colors.black,
         child: Center(
           child: Text(
