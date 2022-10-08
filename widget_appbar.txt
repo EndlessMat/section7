@@ -1,0 +1,93 @@
+import 'package:flutter/material.dart';
+import './year.dart';
+import './month.dart';
+
+class MyYearPicker extends StatefulWidget {
+  const MyYearPicker({super.key});
+
+  @override
+  State<MyYearPicker> createState() => _MyYearPickerState();
+}
+
+class _MyYearPickerState extends State<MyYearPicker> {
+  late FixedExtentScrollController _controller;
+  int currentMonthSelected = (DateTime.now().month).toInt();
+  int currentYearSelected = (DateTime.now().year).toInt();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _controller = FixedExtentScrollController();
+    currentMonthSelected = (DateTime.now().month).toInt();
+    currentYearSelected = (DateTime.now().year).toInt();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        child: Text('Bouton'),
+        onPressed: (() => showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Colors.black,
+                      height: 300,
+                      child: ListWheelScrollView.useDelegate(
+                        onSelectedItemChanged: (value) => setState(() {
+                          currentMonthSelected = value;
+                        }),
+                        controller: _controller,
+                        physics: const FixedExtentScrollPhysics(),
+                        perspective: 0.005,
+                        diameterRatio: 1.2,
+                        itemExtent: 50,
+                        childDelegate: ListWheelChildBuilderDelegate(
+                          childCount: 12,
+                          builder: ((context, index) {
+                            return MyMonth(month: (index));
+                          }),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      color: Colors.black,
+                      height: 300,
+                      child: ListWheelScrollView.useDelegate(
+                        onSelectedItemChanged: (value) => setState(() {
+                          currentMonthSelected = value;
+                          
+                        }),
+                        controller: _controller,
+                        physics: const FixedExtentScrollPhysics(),
+                        perspective: 0.005,
+                        diameterRatio: 1.2,
+                        itemExtent: 50,
+                        childDelegate: ListWheelChildBuilderDelegate(
+                          childCount: 5,
+                          builder: ((context, index) {
+                            return MyYear(year: (index + 2022));
+                          }),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              );
+            })),
+      ),
+    );
+  }
+}
+
+
+
+
+git config --global user.email "mathieu.magnin07@gmail.com"

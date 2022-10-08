@@ -1,0 +1,48 @@
+VERSION LES CLICS DONNENT DES PAGES A ARRIERE GRISE SUR LE MAIN
+OBJECTIF : TOUT EST ACCESSIBLE DEPUIS L'ECRAN PRINCIPAL
+UNE APPLICATION EPUREE QUI PERMET A VOTRE CERVEAU DE NE PAS PERDRE DE TEMPS DANS DES TRAITEMENTS COGNITIFS INUTILES.
+
+
+
+APPBAR CALENDRIER :
+
+- Sélection Année/Mois;
+- Calendrier horizontal;
+- Flèches horizontales au 01 et au dernier jour qui permet de changer de mois;
+- Donner l'info à en-dessous de si c'est today, tomorrow,...
+
+BODY:
+
+- Afficher Today ou autres;
+
+- Card avec bouts ronds "Mes impératifs de la journée" en orange, cliquable qui quand on clique dessus fait pop un emploi du temps avec le reste de l'application grisé genre ça pop sur presque tout l'écran mais on peut revenir en arrière. Il y a aussi un bouton + noir qui apparaît en haut à gauche du nouvel écran. A DECRIRE DANS WIDGET IMPERATIVES;
+
+- SingleChildScrollView avec tâches de la journée scrollables et cliquables, quand on clique, une page s'affiche (arrière grisé) AVEC UNE OPTION VALIDER (cercle vert avec un "tic" blanc à l'intérieur) qui permet de dire qu'on a réalisé la tâche. Quand la tâche est réalisé, un texte aléatoire s'affiche comme par exemple : "Well done bro.", "Keep going G you're on the right track.", "You killed it brosky.", "Nailed it.", "One on one hundred, the grind continues.", "You're doing good as hell dude" -> Phrase qui met l'app en grisé derrière et faut cliquer pour revenir dessus. 
+Ces phrases servent de récompense au mec qui va vouloir réaccomplir une tâche pour recevoir de nouveau un "greeting". Avoir des phrases d'encouragement, mais aussi des phrases de mecs célèbres.
+-> Mettre des pubs en bas du greeting genre pas gros comme ça on génère du biffffffffff lessgooooo!
+
+- Bouton + blanc sur fond orange
+
+- Bouton Options (rouage) en bas à gauche ?
+
+WIDGET IMPERATIVES :
+
+- A définir, peut-être donner un écran total à ce widget ?;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PLUS TARD : synchronisation du cloud comme sur l'application DoIt.
+
+
+
