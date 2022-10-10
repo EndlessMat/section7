@@ -2,6 +2,10 @@ VERSION LES CLICS DONNENT DES PAGES A ARRIERE GRISE SUR LE MAIN
 OBJECTIF : TOUT EST ACCESSIBLE DEPUIS L'ECRAN PRINCIPAL
 UNE APPLICATION EPUREE QUI PERMET A VOTRE CERVEAU DE NE PAS PERDRE DE TEMPS DANS DES TRAITEMENTS COGNITIFS INUTILES.
 
+GRAPHISME LOGO :
+
+The Grind. souligné dans le même vert que celui utilisé pour les jours là
+
 
 
 APPBAR CALENDRIER :
@@ -32,17 +36,49 @@ WIDGET IMPERATIVES :
 
 
 
+Idées d'évolution :
 
-
-
-
-
-
-
-
+Ajouter un mode 'Sport' en haut à droite à côté de la date pour passer sur une appli qui track les performances sportives.
 
 
 PLUS TARD : synchronisation du cloud comme sur l'application DoIt.
+
+
+
+
+
+
+Liste choses à faire aujourd'hui :
+
+- Question StackOverflow:
+
+Poser question : "My Stateful widget doesn't adapt to the data passed in argument whereas the text widget which uses the same arguments adapts above adapts"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

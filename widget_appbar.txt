@@ -90,4 +90,3 @@ class _MyYearPickerState extends State<MyYearPicker> {
 
 
 
-git config --global user.email "mathieu.magnin07@gmail.com"
